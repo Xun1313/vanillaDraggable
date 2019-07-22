@@ -1,0 +1,53 @@
+body {
+  background-color: darksalmon;
+}
+
+[draggable='true'] {
+  /*
+   To prevent user selecting inside the drag source
+  */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.fill {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+.fill:active{
+  cursor: pointer!important;
+}
+
+.one {
+  background-image: url('http://lorempixel.com/150/150/nature');
+}
+.two {
+  background-image: url('http://lorempixel.com/150/150/cats');
+}
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: 3px salmon solid;
+  background-color: white;
+}
+
+.hold {
+  border: solid 4px #ccc;
+}
+
+.invisible {
+  display: none;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
